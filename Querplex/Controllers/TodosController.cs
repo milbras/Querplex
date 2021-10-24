@@ -42,7 +42,7 @@ namespace Querplex.Controllers
         }
 
         [HttpPut("/api/todos/{id}")]
-        public ActionResult<Todos> UpdateProduct(string id, Todos todo)
+        public ActionResult<Todos> UpdateProduct(int id, Todos todo)
         {
             try
             {
@@ -56,7 +56,7 @@ namespace Querplex.Controllers
         }
 
         [HttpDelete("/api/todos/{id}")]
-        public ActionResult<string> DeleteProduct(string id)
+        public ActionResult<string> DeleteProduct(int id)
         {
             try
             {

@@ -26,11 +26,11 @@ namespace Querplex.Services
             return todosItem;
         }
 
-        public string DeleteTodos(string id)
+        public int DeleteTodos(int id)
         {
             for (var index = _todosItems.Count - 1; index >= 0; index--)
             {
-                if (_todosItems[index].ID == id)
+                if (_todosItems[index].Id == id)
                 {
                     _todosItems.RemoveAt(index);
                 }
@@ -40,16 +40,17 @@ namespace Querplex.Services
         }
 
 
-        public Todos UpdateTodos(string id, Todos todosItem)
+        public Todos UpdateTodos(int id, Todos todosItem)
         {
             for (var index = _todosItems.Count - 1; index >= 0; index--)
             {
-                if (_todosItems[index].ID == id)
+                if (_todosItems[index].Id == id)
                 {
                     _todosItems[index] = todosItem;
                 }
             }
             return todosItem;
         }
+
     }
 }

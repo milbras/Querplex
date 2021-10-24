@@ -9,9 +9,9 @@ namespace Querplex.Services
         
         public Todos AddTodos(Todos todoItem);
         
-        public Todos UpdateTodos(string id, Todos todoItem);
+        public Todos UpdateTodos(int id, Todos todoItem);
         
-        public string DeleteTodos(string id);
+        public int DeleteTodos(int id);
         
     }
 }
