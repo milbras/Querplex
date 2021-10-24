@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31129.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Querplex", "Querplex\Querplex.csproj", "{2703C6AB-3E1E-477E-BA75-340FE8998379}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2703C6AB-3E1E-477E-BA75-340FE8998379}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2703C6AB-3E1E-477E-BA75-340FE8998379}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2703C6AB-3E1E-477E-BA75-340FE8998379}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2703C6AB-3E1E-477E-BA75-340FE8998379}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {974172D4-9DAD-4AA7-A8F9-1E91124A3535}
+	EndGlobalSection
+EndGlobal
