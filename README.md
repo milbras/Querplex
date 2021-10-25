@@ -1,13 +1,13 @@
-***************** Task *************************
-                TODO CRUD
-Backend
+# Task 
+#                TODO CRUD
+## Backend
 • ExpressJs mit Typescript ohne Datenbank
 • Endpoint "todos" (CRUD) -- liefert eine statisch Liste an Todos aus
 • Todos werden im Backend nicht persistiert
 • Middleware nutzen
 • Minimale Absicherung der API
 
-Frontend
+## Frontend
 • Angular
 • Twitter Bootstrap
 • Endpoint von Backend "todos" ansprechen
@@ -19,16 +19,17 @@ Frontend
 
 
 
-                      # Querplex
-**********************Solution********************** 
+# Querplex
+# Solution 
 
-Small API with All CRUD Operation Test.
+Small API that maintance ToDo list with All CRUD Operation Test.
 
 *****************************************
-Backend 
+# Backend 
+
 • The fastes way for me was using C# code for creating the API. The API was tested using Postman 
 • Used Technology: C# and .Net Core 3.1
 
 ****************************************
-Frontend 
+# Frontend 
 • Is done using Angular 
