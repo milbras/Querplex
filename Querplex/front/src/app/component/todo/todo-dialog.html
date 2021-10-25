@@ -1,0 +1,22 @@
+<table style="width:100%">
+    <tr>
+      <b><td style="width: 50%;">#</td></b>
+      <td style="width: 50%;">{{data.Id}}</td>
+    </tr>
+    <tr>
+        <b><td style="width: 50%;">Name </td></b>
+      <td style="width: 50%;">
+        <input matInput [(ngModel)]="data.Name" >
+      </td>
+    </tr>
+    <tr>
+        <b><td style="width: 50%;">Status </td></b>
+      <td style="width: 50%;"> {{data.Status}}</td>
+    </tr>
+    <tr>
+        <b><td style="width: 50%;">Date </td></b>
+      <td style="width: 50%;"> {{data.TodoDate}}</td>
+    </tr>
+    <button  (click)="SaveCh(data)">Save</button>
+  </table>
+  

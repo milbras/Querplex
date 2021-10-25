@@ -5,7 +5,7 @@ namespace Querplex.Services
 {
     public interface ITodosService
     {
-        public List<Todos> GetTodos();
+        public List<Todos> GetAllTodos();
         
         public Todos AddTodos(Todos todoItem);
         

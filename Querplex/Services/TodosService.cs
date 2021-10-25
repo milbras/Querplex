@@ -11,10 +11,12 @@ namespace Querplex.Services
 
         public TodosService()
         {
-            _todosItems = new List<Todos>();
+            _todosItems = new List<Todos>() {
+                new Todos {Id=1, Name= "Solve Querplex task", Status = false, TodoDate = new DateTime(2021, 10, 25) },
+                new Todos {Id=2, Name= "Sign Contract with ElevateX for Querplex", Status = false, TodoDate =new DateTime(2021, 10, 29) }};
         }
 
-        public List<Todos> GetTodos()
+        public List<Todos> GetAllTodos()
         {
             return _todosItems;
         }

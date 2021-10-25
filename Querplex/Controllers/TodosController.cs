@@ -4,11 +4,13 @@ using Querplex.Services;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Http;
 using System;
+using Microsoft.AspNetCore.Cors;
 
 namespace Querplex.Controllers
 {
     [ApiController]
     [Route("[controller]")]
+    [EnableCors("MyPolicy")]
     public class TodosController : ControllerBase
     {
         private readonly ILogger<TodosController> _logger;
@@ -23,12 +25,12 @@ namespace Querplex.Controllers
         [HttpGet("/api/todos")]
         public ActionResult<List<Todos>> GetTodos()
         {
-            return StatusCode(StatusCodes.Status200OK, _service.GetTodos());
+            return StatusCode(StatusCodes.Status200OK, _service.GetAllTodos());
         }
 
 
         [HttpPost("/api/todos")]
-        public ActionResult<Todos> AddProduct(Todos todo)
+        public ActionResult<Todos> AddToDo([FromBody] Todos todo)
         {
             try
             {
@@ -42,7 +44,7 @@ namespace Querplex.Controllers
         }
 
         [HttpPut("/api/todos/{id}")]
-        public ActionResult<Todos> UpdateProduct(int id, Todos todo)
+        public ActionResult<Todos> UpdateToDo(int id, Todos todo)
         {
             try
             {
@@ -56,7 +58,7 @@ namespace Querplex.Controllers
         }
 
         [HttpDelete("/api/todos/{id}")]
-        public ActionResult<string> DeleteProduct(int id)
+        public ActionResult<string> DeleteToDo(int id)
         {
             try
             {
